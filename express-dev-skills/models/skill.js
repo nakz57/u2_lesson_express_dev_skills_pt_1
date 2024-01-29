@@ -10,7 +10,7 @@ const getAll = () => {
 }
 
 const getOne = (id) => {
-  let skill = skills.find((skills) => {
+  let skill = skills.find((skill) => {
     //find todo where the id is equal to the id parameter
     return skill.id === parseInt(id)
   })
