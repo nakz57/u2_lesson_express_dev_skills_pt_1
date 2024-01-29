@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <!-- bulma docs from bulma io -->
     <title><%=title%></title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <h1>Express Skills</h1>
-    <ul>
-      <% skills.forEach( skill => { %>
+    <div class="content">
+      <ol type="I">
+        <% skills.forEach( skill => { %>
 
-      <a href="/skills/<%= skill.id %>"><%= skill.skill %></a>
+        <li><a href="/skills/<%= skill.id %>"><%= skill.skill %></a></li>
 
-      <% }); %>
-    </ul>
+        <% }); %>
+      </ol>
+    </div>
   </body>
   <html></html>
 </html>
+<!-- classes from bulma -->
