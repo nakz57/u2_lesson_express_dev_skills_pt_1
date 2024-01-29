@@ -7,7 +7,7 @@ const index = (req, res) => {
 }
 
 const show = (req, res) => {
-  const skill = skill.getOne(req.params.id)
+  const skill = Skill.getOne(req.params.id)
   res.render('skills/show', { skill })
 }
 
