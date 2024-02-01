@@ -34,7 +34,7 @@ const update = (req, res) => {
   let skillId = req.params.id
   let updatedSkill = req.body.skill
   Skill.updateOne(skillId, updatedSkill)
-  res.redirect('/skills')
+  show(req, res)
 }
 
 module.exports = {
